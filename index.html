@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form | Divesh</title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+
+<body>
+ <script src="pay.js"></script>
+<form>
+    <table cellpadding="8" cellspacing="0">
+
+        <tr>
+            <td>
+                <h1 >Payment Details</h1>
+                <hr>
+            </td>
+        </tr>
+
+        <!-- Card Payment -->
+        <tr>
+            <td>
+                <h4> 
+                    <label >
+                     Credit / Debit Card: <input type="radio" name="payment" value="Card" checked>
+                  
+                    </label>
+                </h4>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Card Number:<br>
+                <input type="text" maxlength="16" placeholder="1234 5678 9012 3456">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Card Type:<br>
+                <select>
+                    <option>Visa</option>
+                    <option>MasterCard</option>
+                    <option>RuPay</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Expiry Date:<br>
+                <input type="number" min="1" max="12" placeholder="MM">
+                <input type="number" min="2024" max="2035" placeholder="YYYY">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                CVV:<br>
+                <input type="password" maxlength="3">
+                <hr>
+            </td>
+        </tr>
+
+        <!-- UPI -->
+        <tr>
+            <td>
+                <h4><label >
+                  UPI Payment: <input type="radio" name="payment" value="upi">
+                    
+               </label>
+                </h4>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                UPI ID:<br>
+                <input type="text" placeholder="example@upi">
+                <hr>
+            </td>
+        </tr>
+
+        <!-- Net Banking -->
+        <tr>
+            <td>
+                <h4>
+                    <label >
+                    Net Banking:  <input type="radio" name="payment" value="Net">
+                  
+                </label>
+                </h4>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Select Bank:<br>
+                <select>
+                    <option>SBI</option>
+                    <option>HDFC</option>
+                    <option>ICICI</option>
+                </select>
+                <hr>
+            </td>
+        </tr>
+
+        <!-- COD -->
+        <tr>
+            <td>
+                <h4>
+                    <label >
+                      Cash On Delivery:  <input type="radio" name="payment">
+                </label>
+                </h4>
+                <hr>
+            </td>
+        </tr>
+
+        <!-- Buttons -->
+        <tr>
+            <td>
+                <button type="submit">Confirm Payment</button>
+                <button type="reset">Cancel</button>
+            </td>
+        </tr>
+
+        <!-- Links -->
+        <tr>
+            <td>
+                <a href="mailto:diveshkhairnar19@gmail.com">Send Email</a><br>
+                <a href="tel:+919028294456">Call Us</a><br>
+                <a href="files/sample.pdf" download>Download Invoice</a>
+            </td>
+        </tr>
+
+    </table>
+</form>
+
+</body>
+</html>
+

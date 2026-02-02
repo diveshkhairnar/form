@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  background:lightgrey;
+}
+
+.container {
+  width: 360px;
+  margin: 40px auto;
+  background: #4e423b;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #0a3d62;
+}
+
+.section {
+  margin-bottom: 15px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  background: #0a3d62;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button.cancel {
+  background: #ccc;
+  color: #000;
+}
+
+.links {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.links a {
+  display: inline-block;
+  margin: 5px;
+  text-decoration: none;
+}
+ label {
+    display: inline-flex;
+    align-items: center;
+    gap:3px;
+}
