@@ -10,16 +10,16 @@
 <body>
  <script src="pay.js"></script>
 <form>
-    <table cellpadding="8" cellspacing="0">
+    <table cellpadding="8" cellspacing="0" >
 
         <tr>
             <td>
                 <h1 >Payment Details</h1>
-                <hr>
+                
             </td>
         </tr>
 
-        <!-- Card Payment -->
+        
         <tr>
             <td>
                 <h4> 
@@ -32,15 +32,16 @@
         </tr>
 
         <tr>
-            <td>
-                Card Number:<br>
+            <td class="title-cell">
+                Card Number:
                 <input type="text" maxlength="16" placeholder="1234 5678 9012 3456">
+                <hr class="title-hr">
             </td>
         </tr>
 
         <tr>
             <td>
-                Card Type:<br>
+                Card Type <br>
                 <select>
                     <option>Visa</option>
                     <option>MasterCard</option>
@@ -69,9 +70,8 @@
         <tr>
             <td>
                 <h4><label >
-                  UPI Payment: <input type="radio" name="payment" value="upi">
-                    
-               </label>
+                  UPI Payment: <input type="radio" name="payment" value="UPI" checked>
+                  </label>
                 </h4>
             </td>
         </tr>
@@ -142,4 +142,3 @@
 
 </body>
 </html>
-
